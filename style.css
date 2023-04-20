@@ -141,8 +141,8 @@ button:hover, ul:hover{
     display: flex;
     place-self: center;
     margin: 4rem;
-    gap: 4rem;
-    max-width: 900px;
+    gap: 5rem;
+    max-width: 1000px;
 }
 h1{
     color: var(--txt-clr);
