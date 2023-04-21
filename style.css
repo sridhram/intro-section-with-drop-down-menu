@@ -100,10 +100,7 @@ body{
     display: flex;
     font-size: .8rem;
     margin-inline-start: 2.5rem;
-}
-
-.signup-menu{
-    margin-inline: auto 0;
+    flex-grow: 1;
 }
 
 h1{
@@ -117,6 +114,7 @@ h1{
     margin-inline-end: 1.1rem;
     cursor:pointer;
     color: var(--desc-clr);
+    margin-inline: auto 1.5rem;
 }
 .rounded-btn{
     padding: 0.5rem 1rem;
@@ -263,10 +261,42 @@ aside li{
     h1{
         font-size: 8vw;
     }
-    .nav-container, .signup-menu{
+    .nav-container{
         display: none;
+        flex-direction: column;
+        position: absolute;
+        align-items: center;
+        background-color: var(--body-bg);
+        right: 0px;
+        top: 0px;
+        height: 100%;
+        padding: 1rem;
+    }
+    .nav-container > * {
+        align-self: stretch;
+        padding-block: 1.5rem;
     }
     .menu-icon-mobile{
         display: block;
+    }
+    .nav-container ul{
+        margin-inline: 0rem 6rem;
+    }
+    .login-btn{
+        align-self: center;
+        margin: 0;
+    }
+    .register-btn{
+        align-self: stretch;
+        padding-block: 0.7rem;
+    }
+    .mobile-submenu{
+        position: static;
+        box-shadow: none;
+        padding-block: 0rem;
+    }
+    .mobile-submenu ul{
+        padding: 0;
+        margin: 0;
     }
 }

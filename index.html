@@ -14,19 +14,53 @@
 <body>
   <header class="navigation">
     <picture class="company-logo"><img src="./images/logo.svg" alt="company logo"></picture>
-    <nav class="nav-container">
-      <ul><span>Features</span><img src="./images/icon-arrow-down.svg"></ul>
-      <ul><span>Company</span><img src="./images/icon-arrow-down.svg"></ul>
-      <ul>Careers</ul>
-      <ul>About</ul>
-    </nav>
-    <section class="signup-menu">
-      <button class="login-btn">Login</button>
-      <button class="register-btn rounded-btn">Register</button>
-    </section>
     <button class="menu-icon-mobile">
       <img src="./images/icon-menu.svg" alt="menu icon">
     </button>
+    <nav class="nav-container">
+      <button class="menu-icon-mobile">
+        <img src="./images/icon-close-menu.svg" alt="menu icon">
+      </button>
+      <ul><span>Features</span><img src="./images/icon-arrow-down.svg"></ul>
+      <aside class="feature-menu hide">
+        <ul>
+          <li>
+            <img src="./images/icon-todo.svg" alt="to-do icon">
+            <span>Todo list</span>
+          </li>
+          <li>
+            <img src="./images/icon-calendar.svg" alt="Calender icon">
+            <span>Calender</span>
+          </li>
+          <li>
+            <img src="./images/icon-reminders.svg" alt="Reminders icon">
+            <span>Reminders</span>
+          </li>
+          <li>
+            <img src="./images/icon-planning.svg" alt="Planning icon">
+            <span>Planning</span>
+          </li>
+        </ul>
+      </aside>
+      <ul><span>Company</span><img src="./images/icon-arrow-down.svg"></ul>
+      <aside class="company-menu hide">
+        <ul>
+          <li>
+            <span>History</span>
+          </li>
+          <li>
+            <span>Our Team</span>
+          </li>
+          <li>
+            <span>Blog</span>
+          </li>
+        </ul>
+      </aside>
+      <ul>Careers</ul>
+      <ul>About</ul>
+      <button class="login-btn">Login</button>
+      <button class="register-btn rounded-btn">Register</button>
+    </nav>
   </header>
   <main class="main-container">
     <section class="img-container-mobile">
@@ -47,39 +81,6 @@
       <img src="./images/image-hero-desktop.png" alt="background image">
     </section>
   </main>
-  <aside class="feature-menu hide">
-    <ul>
-      <li>
-        <img src="./images/icon-todo.svg" alt="to-do icon">
-        <span>Todo list</span>
-      </li>
-      <li>
-        <img src="./images/icon-calendar.svg" alt="Calender icon">
-        <span>Calender</span>
-      </li>
-      <li>
-        <img src="./images/icon-reminders.svg" alt="Reminders icon">
-        <span>Reminders</span>
-      </li>
-      <li>
-        <img src="./images/icon-planning.svg" alt="Planning icon">
-        <span>Planning</span>
-      </li>
-    </ul>
-  </aside>
-  <aside class="company-menu hide">
-    <ul>
-      <li>
-        <span>History</span>
-      </li>
-      <li>
-        <span>Our Team</span>
-      </li>
-      <li>
-        <span>Blog</span>
-      </li>
-    </ul>
-  </aside>
   <script src="./index.js"></script>
 </body>
 </html>
