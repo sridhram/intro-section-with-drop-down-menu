@@ -29,7 +29,7 @@ dd {
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],
-ol[role='list'] {
+ol[role='list'], aside ul {
   list-style: none;
 }
 
@@ -141,7 +141,7 @@ button:hover, ul:hover{
     display: flex;
     place-self: center;
     margin: 4rem;
-    gap: 5rem;
+    gap: 4rem;
     max-width: 1000px;
 }
 h1{
@@ -195,6 +195,52 @@ h1{
     cursor: pointer;
 }
 
+aside li img{
+    display: inline-block;
+    padding-inline-end: 0.5rem;
+}
+
+.nav-container li span{
+    padding-inline-end: 0.5rem;
+}
+
+.feature-menu, .company-menu{
+    position: absolute;
+    background-color: var(--body-bg);
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 4px 4px #d6d6d6;
+}
+
+aside li{
+    padding: 0.5rem;
+}
+
+.nav-container img{
+    display: inline-block;
+    vertical-align: middle;
+    transition: transform .2s;
+}
+.rotate-transition{
+    transform: rotate(180deg);
+}
+.nav-container ul{
+    cursor: pointer;
+    padding: 0;
+    margin-inline-start: 2rem;
+}
+
+.feature-menu ul,
+.company-menu ul{
+    margin: 0;
+    padding: 1rem 0.7rem;
+}
+.hide{
+    display: none;
+}
+
+.nav-container span{
+    padding-inline-end: .5rem;
+}
 @media (max-width:750px){
     .main-container{
         flex-direction: column;
